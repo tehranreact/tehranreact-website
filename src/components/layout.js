@@ -8,6 +8,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import 'typeface-poppins';
+
 import './layout.css';
 
 const Layout = ({ children }) => {

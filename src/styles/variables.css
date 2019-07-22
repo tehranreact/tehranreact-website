@@ -1,6 +1,14 @@
 :root {
+  /* Colors */
   --color-primary: #61DAFB;
   --color-secondary: #2B2B2C;
 
   --color-white: #fff;
+
+  /* Font Sizes */
+  --font-tiny: 1.2rem;
+  --font-small: 1.4rem;
+  --font-normal: 1.6rem;
+  --font-title: 1.8rem;
+  --font-huge: 2rem;
 }
