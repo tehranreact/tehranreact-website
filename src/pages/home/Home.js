@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { Layout, SEO } from '../components';
+import { Layout, SEO } from '../../components';
 
-const IndexPage = () => {
+const Home = () => {
   return (
     <Layout>
       <SEO title="Home" />
-
+      
     </Layout>
   );
 };
 
-export default IndexPage;
+export default Home;
