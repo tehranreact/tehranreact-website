@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  font-weight: 300;
+  color: var(--color-black);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+@media (min-width: 2560px) {
+  html {
+    font-size: 87.5%; /* 14 px */
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 56.25%; /* 9 px */
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 50%; /* 8 px */
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 43.75%; /* 7 px */
+  }
+}
