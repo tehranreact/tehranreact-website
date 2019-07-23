@@ -7,6 +7,46 @@
   justify-content: space-between;
   padding-top: 4rem;
   overflow: hidden;
+  position: relative;
+}
+
+.Header::before, .Header::after {
+  content: "";
+  position: absolute;
+  background: var(--color-secondary);
+  border-radius: 16.2rem;
+  width: 58vw;
+  height: 34.8vw;
+  transform: rotate(-28deg);
+}
+
+.Header::before {
+  top: 10%;
+  right: 83%;
+  box-shadow: 1.5rem 1.5rem 5rem rgba(0, 0, 0, 0.2);
+  animation: morphing 20s infinite;
+}
+
+@keyframes morphing {
+  0% {
+    border-radius: 16.2rem;
+    box-shadow: 1.5rem 1.5rem 5rem rgba(0,0,0,0.2);
+  }
+  25% {
+    border-radius: 30% 70% 48% 52% / 65% 7% 93% 35% ;
+    box-shadow: -1rem -0.5rem 5rem rgba(0,0,0,0.2);
+  }
+  50% {
+    border-radius: 49% 51% 33% 67% / 76% 56% 44% 24%;
+  }
+  75% {
+    border-radius: 77% 23% 33% 67% / 76% 47% 53% 24%;
+  }
+}
+
+.Header::after {
+  top: -50%;
+  left: 80%;
 }
 
 .Header__titleContainer {

@@ -104,15 +104,15 @@ const Header = () => {
             </filter>
           </defs>
         </svg>
-        <a rel="noreferrer" target="_blank" href="https://telegram.me/joinchat/D8jLp0D27irx4rjq2j88xw" className="Header__action">
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/joinchat/D8jLp0D27irx4rjq2j88xw" className="Header__action">
           <Icon size="3.2rem" name="telegram" />
           <span className="Header__actionText">Telegram Group</span>
         </a>
-        <a rel="noreferrer" target="_blank" href="https://github.com/tehranreact" className="Header__action -secondary">
+        <a rel="noopener noreferrer" target="_blank" href="https://github.com/tehranreact" className="Header__action -secondary">
           <Icon huge name="github" />
           <span className="Header__actionText">Github</span>
         </a>
-        <a rel="noreferrer" target="_blank" href="https://twitter.com/tehranreact" className="Header__action -secondary">
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/tehranreact" className="Header__action -secondary">
           <Icon huge name="twitter" />
           <span className="Header__actionText">Twitter</span>
         </a>
