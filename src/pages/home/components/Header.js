@@ -46,6 +46,31 @@ const Header = () => {
       }, 2500);
   }, []);
 
+  useEffect(() => {
+    const buttons = [...document.querySelectorAll('.Header__action')];
+    buttons.forEach(button => {
+      const turb = document.querySelectorAll('#filter-shake feTurbulence')[0];
+      const turbValue = { val: 0.000001 };
+      const buttonTimeline = new TimelineLite({
+        paused: true,
+        onUpdate() {
+          turb.setAttribute('baseFrequency', '0.00001 ' + turbValue.val); // Firefox bug is value is 0
+        },
+        onStart() {
+          button.style.filter = 'url(#filter-shake)';
+        },
+        onComplete() {
+          button.style.filter = 'none';
+        },
+      });
+      const restartAnimation = () => {
+        buttonTimeline.restart();
+      }
+      buttonTimeline.to(turbValue, 0.2, { val: 0.06 });
+      buttonTimeline.to(turbValue, 0.2, { val: 0.000001 });
+      button.addEventListener('mouseenter', restartAnimation);
+    });
+  }, []);
   return (
     <header className="Header">
       <div className="Header__titleContainer">
