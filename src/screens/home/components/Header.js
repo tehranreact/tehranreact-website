@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { TimelineMax, TimelineLite } from 'gsap/all';
 
 import { Icon } from '../../../components';
-import { ReactComponent as Logo } from '../../../assets/images/logo.svg';
+import { ReactComponent as Logo } from '../../../assets/svg/logo.svg';
 
 const Header = () => {
   useEffect(() => {

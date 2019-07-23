@@ -24,29 +24,14 @@
   top: 10%;
   right: 83%;
   box-shadow: 1.5rem 1.5rem 5rem rgba(0, 0, 0, 0.2);
-  animation: morphing 20s infinite;
-}
-
-@keyframes morphing {
-  0% {
-    border-radius: 16.2rem;
-    box-shadow: 1.5rem 1.5rem 5rem rgba(0,0,0,0.2);
-  }
-  25% {
-    border-radius: 30% 70% 48% 52% / 65% 7% 93% 35% ;
-    box-shadow: -1rem -0.5rem 5rem rgba(0,0,0,0.2);
-  }
-  50% {
-    border-radius: 49% 51% 33% 67% / 76% 56% 44% 24%;
-  }
-  75% {
-    border-radius: 77% 23% 33% 67% / 76% 47% 53% 24%;
-  }
+  animation: morphing 12s infinite;
 }
 
 .Header::after {
-  top: -50%;
+  bottom: 90%;
   left: 80%;
+  animation: morphing 20s infinite;
+  animation-delay: 1s;
 }
 
 .Header__titleContainer {
@@ -54,6 +39,8 @@
   flex-direction: column;
   align-items: center;
   user-select: none;
+  max-width: calc(100% - 3rem);
+  text-align: center;
 }
 
 .Header__title {
@@ -105,6 +92,7 @@
 .Header__description {
   font-size: var(--font-huge);
   padding-bottom: 2rem;
+  z-index: 2;
 }
 
 .Header__actionsContainer {
@@ -112,6 +100,9 @@
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: minmax(min-content, max-content);
   grid-gap: 2.5rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  z-index: 2;
 }
 
 .Header__svgFilter {
@@ -152,4 +143,27 @@
   width: 67%;
   max-width: 40rem;
   margin-bottom: -1.5rem;
+}
+
+@keyframes morphing {
+  0% {
+    border-radius: 16.2rem;
+    box-shadow: 1.5rem 1.5rem 5rem rgba(0,0,0,0.2);
+  }
+  25% {
+    border-radius: 49% 51% 33% 67% / 76% 56% 44% 24%;
+  }
+  50% {
+    border-radius: 52% 48% 15% 85% / 100% 37% 63% 18% ;
+    box-shadow: -1rem -0.5rem 5rem rgba(0,0,0,0.2);
+  }
+  75% {
+    border-radius: 15% 85% 60% 40% / 73% 23% 77% 27%;
+  }
+}
+
+@media (max-width: 767px) {
+  .Header::before, .Header::after {
+    display: none;
+  }
 }
