@@ -1,0 +1,115 @@
+.Header {
+  height: 100vh;
+  background-image: linear-gradient(-45deg, #0E0E0F, #1A1A21);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4rem;
+  overflow: hidden;
+}
+
+.Header__titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+}
+
+.Header__title {
+  font-size: 7.3rem;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.Header__title.-clone {
+  position: absolute;
+  left: 0;
+}
+
+.Header__titleText.-light { font-weight: 300; }
+
+.Header__titleGlitchWrapper {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  background: #15151A;
+}
+
+.Header__titleGlitchWrapper:first-of-type {
+  height: 4.9rem;
+  top: 2.8rem;
+  left: -2px;
+}
+
+.Header__titleGlitchWrapper:first-of-type .Header__title {
+  text-shadow: -1px 0 red;
+  top: -3rem;
+}
+
+.Header__titleGlitchWrapper:nth-of-type(2) {
+  left: 1px;
+  height: 4.9rem;
+  bottom: 2.8rem;
+}
+
+.Header__titleGlitchWrapper:nth-of-type(2) .Header__title {
+  text-shadow: 1px 0 gold;
+  bottom: -2.9rem;
+}
+
+.Header__animationWrapper {
+  position: relative;
+}
+
+.Header__description {
+  font-size: var(--font-huge);
+  padding-bottom: 2rem;
+}
+
+.Header__actionsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-gap: 2.5rem;
+}
+
+.Header__svgFilter {
+  position: absolute;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+}
+
+.Header__action {
+  padding: 2.1rem 5rem;
+  background: #2CA0DA;
+  color: var(--color-white);
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20rem;
+  font-weight: 500;
+  grid-column: 1/3;
+  transform: translateZ(0);
+  will-change: transform;
+  outline: 10rem solid transparent;
+}
+
+.Header__action.-secondary {
+  padding: 1.2rem 0rem;
+  grid-column: auto;
+  font-size: var(--font-title);
+  background: var(--color-secondary);
+}
+
+.Header__actionText {
+  margin-left: 1.6rem;
+}
+
+.Header__logo {
+  width: 67%;
+  max-width: 40rem;
+  margin-bottom: -1.5rem;
+}

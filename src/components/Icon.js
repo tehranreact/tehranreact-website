@@ -22,7 +22,7 @@ const Icon = React.forwardRef(
     ref,
   ) => {
     const computedClassName = `icon-${name} ${className}`;
-    const sizes = { small, tiny, title, titleLarge, huge };
+    const sizes = { small, tiny, title, huge };
     const colors = { primary, secondary, white };
     const foundPresetSize = tuplify(sizes).find(tuple => tuple[1]);
     const fontSize = foundPresetSize ? `var(--font-${foundPresetSize[0]})` : size;
