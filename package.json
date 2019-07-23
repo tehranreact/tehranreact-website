@@ -8,7 +8,6 @@
     "@svgr/webpack": "^4.3.2",
     "gatsby": "^2.13.31",
     "gatsby-image": "^2.2.6",
-    "gatsby-plugin-manifest": "^2.2.3",
     "gatsby-plugin-offline": "^2.2.4",
     "gatsby-plugin-react-helmet": "^3.1.2",
     "gatsby-plugin-routes": "^1.0.0",
