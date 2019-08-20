@@ -6,3 +6,6 @@
 
 import './src/styles/variables.css';
 import './src/styles/icons.css';
+
+import CSSPlugin from 'gsap/CSSPlugin';
+const C = CSSPlugin; // eslint-disable-line
