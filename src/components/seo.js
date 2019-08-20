@@ -42,12 +42,12 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
-          property: `og:title`,
-          content: title,
+          property: `og:image`,
+          content: 'https://tehranreact.ir/public/social.jpg',
         },
         {
-          property: `og:description`,
-          content: metaDescription,
+          property: `og:url`,
+          content: 'https://tehranreact.ir',
         },
         {
           property: `og:type`,
@@ -55,7 +55,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
@@ -69,6 +69,14 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `twitter:image:src`,
+          content: 'https://tehranreact.ir/public/social.jpg',
+        },
+        {
+          name: 'keywords',
+          content: 'React,React Native, Iran React, Iran React Native, Tehran React, ریکت, ریکت نیتیو'
+        }
       ].concat(meta)}
     >
       <link rel="shortcut icon" href={logoFavIcon} />
