@@ -2323,7 +2323,7 @@ chokidar@2.1.2, chokidar@^2.0.2:
   optionalDependencies:
     fsevents "^1.2.7"
 
-chokidar@^2.1.2, chokidar@^2.1.6:
+chokidar@^2.1.6:
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.1.6.tgz#b6cad653a929e244ce8a834244164d241fa954c5"
   dependencies:
@@ -4458,13 +4458,6 @@ gatsby-plugin-react-helmet@^3.1.2:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-3.1.2.tgz#cde010f708581db4afbb3014257a6cef5c062116"
   dependencies:
     "@babel/runtime" "^7.0.0"
-
-gatsby-plugin-routes@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-routes/-/gatsby-plugin-routes-1.0.0.tgz#10a01ae6fc331cd545eee8eb6508b0478b45f82e"
-  dependencies:
-    chokidar "^2.1.2"
-    core-js "^2.6.5"
 
 gatsby-plugin-sharp@^2.2.8:
   version "2.2.8"

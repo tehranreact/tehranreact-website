@@ -54,7 +54,7 @@ const Header = () => {
       const buttonTimeline = new TimelineLite({
         paused: true,
         onUpdate() {
-          turb.setAttribute('baseFrequency', '0.00001 ' + turbValue.val); // Firefox bug is value is 0
+          turb.setAttribute('baseFrequency', '0.00001 ' + turbValue.val); // Firefox has a bug with 0
         },
         onStart() {
           button.style.filter = 'url(#filter-shake)';
