@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
+  <a href="https://www.tehranreact.ir">
     <img alt="Gatsby" src="https://tehranreact.ir/public/logo.svg" width="120" />
   </a>
 </p>
