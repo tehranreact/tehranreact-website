@@ -104,7 +104,7 @@ const Header = () => {
             </filter>
           </defs>
         </svg>
-        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/joinchat/D8jLp0D27irx4rjq2j88xw" className="Header__action">
+        <a rel="noopener noreferrer" target="_blank" href="https://t.me/tehranreact" className="Header__action">
           <Icon size="3.2rem" name="telegram" />
           <span className="Header__actionText">Telegram Group</span>
         </a>
